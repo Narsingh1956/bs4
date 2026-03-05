@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volunteer | Mission Bodhmay Bharat</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f4f4f4;
+line-height:1.6;
+}
+
+/* NAVBAR */
+
+header{
+background:#0d47a1;
+color:white;
+}
+
+nav{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+}
+
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+background:#0d47a1;
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+/* FORM SECTION */
+
+.container{
+max-width:800px;
+margin:auto;
+padding:40px 20px;
+}
+
+.form-box{
+background:white;
+padding:30px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-box h2{
+text-align:center;
+color:#0d47a1;
+margin-bottom:20px;
+}
+
+form{
+display:grid;
+gap:15px;
+}
+
+input, select, textarea{
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px;
+font-size:15px;
+width:100%;
+}
+
+textarea{
+resize:vertical;
+}
+
+button{
+background:#ff9800;
+color:white;
+border:none;
+padding:12px;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#e68900;
+}
+
+/* FOOTER */
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+nav ul{
+position:absolute;
+top:60px;
+left:0;
+width:100%;
+background:#0d47a1;
+flex-direction:column;
+display:none;
+}
+
+nav ul li{
+margin:15px 0;
+text-align:center;
+}
+
+nav ul.show{
+display:flex;
+}
+
+.menu-toggle{
+display:block;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">Bodhmay Bharat</div>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<ul id="menu">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="programs.html">Programs</a></li>
+<li><a href="volunteer.html">Volunteer</a></li>
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<h1>Become a Volunteer</h1>
+<p>Join us in spreading compassion, knowledge, and social equality.</p>
+
+</section>
+
+
+<div class="container">
+
+<div class="form-box">
+
+<h2>Volunteer Registration Form</h2>
+
+<form>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<input type="text" placeholder="City / Location">
+
+<select required>
+<option value="">Select Area of Interest</option>
+<option>Community Service</option>
+<option>Education Support</option>
+<option>Buddhist Programs</option>
+<option>Event Organization</option>
+<option>Social Awareness Campaigns</option>
+</select>
+
+<textarea rows="4" placeholder="Why do you want to volunteer with us?"></textarea>
+
+<button type="submit">Submit Registration</button>
+
+</form>
+
+</div>
+
+</div>
+
+
+<footer>
+
+<p>© 2026 Mission Bodhmay Bharat | BS4 - Bouddh Samaj Sanrakshan Sanvardhan Sangh</p>
+
+</footer>
+
+
+<script>
+
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("show");
+}
+
+</script>
+
+</body>
+</html>

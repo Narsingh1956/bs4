@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate | Mission Bodhmay Bharat</title>
+
+<style>
+
+/* GLOBAL STYLES */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f4f4f4;
+line-height:1.6;
+}
+
+/* NAVBAR */
+header{
+background:#0d47a1;
+color:white;
+}
+
+nav{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+}
+
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+/* HERO */
+.hero{
+background:#0d47a1;
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+/* DONATION SECTION */
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.donation-box{
+background:white;
+padding:25px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.donation-box h2{
+color:#0d47a1;
+margin-bottom:15px;
+text-align:center;
+}
+
+.donation-box p{
+margin-bottom:12px;
+}
+
+.bank-details{
+background:#e3f2fd;
+padding:15px;
+border-radius:5px;
+margin-bottom:20px;
+}
+
+.bank-details strong{
+display:block;
+margin-bottom:5px;
+}
+
+.qr-code{
+text-align:center;
+margin-bottom:20px;
+}
+
+.qr-code img{
+max-width:200px;
+width:100%;
+border-radius:8px;
+}
+
+/* ACKNOWLEDGEMENT FORM */
+.acknowledgement{
+background:#fff3e0;
+padding:15px;
+border-radius:5px;
+text-align:center;
+}
+
+.acknowledgement a{
+display:inline-block;
+margin-top:10px;
+padding:10px 20px;
+background:#ff9800;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+.acknowledgement a:hover{
+background:#e68900;
+}
+
+/* FOOTER */
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+nav ul{
+position:absolute;
+top:60px;
+left:0;
+width:100%;
+background:#0d47a1;
+flex-direction:column;
+display:none;
+}
+
+nav ul li{
+margin:15px 0;
+text-align:center;
+}
+
+nav ul.show{
+display:flex;
+}
+
+.menu-toggle{
+display:block;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.container{
+grid-template-columns:1fr;
+}
+
+.qr-code img{
+max-width:150px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">Bodhmay Bharat</div>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<ul id="menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="programs.html">Programs</a></li>
+<li><a href="volunteer.html">Volunteer</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="donate.html">Donate</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+<h1>Donate to Mission Bodhmay Bharat</h1>
+<p>Your contribution helps us spread education, compassion, and equality.</p>
+</section>
+
+<div class="container">
+
+<div class="donation-box">
+<h2>Donation Options</h2>
+
+<div class="qr-code">
+<p>Scan the QR code to donate via UPI / Paytm / PhonePe:</p>
+<img src="qr-code-placeholder.png" alt="QR Code for Donations">
+</div>
+
+<div class="bank-details">
+<strong>Bank Name:</strong> State Bank of India  
+<strong>Account Name:</strong> Bouddh Samaj Sanrakshan Sanvardhan Sangh  
+<strong>Account Number:</strong> 123456789012  
+<strong>IFSC Code:</strong> SBIN0001234  
+<strong>Branch:</strong> Mumbai, India  
+</div>
+
+<div class="acknowledgement">
+<p>After making your donation, please fill out this form for acknowledgement:</p>
+<a href="https://forms.gle/your-google-form-link" target="_blank">Fill Acknowledgement Form</a>
+</div>
+
+</div>
+
+<div class="donation-box">
+<h2>Why Donate?</h2>
+
+<p>Your support helps us:</p>
+<ul>
+<li>Run Buddhist training programs</li>
+<li>Organize social awareness campaigns</li>
+<li>Support education for underprivileged communities</li>
+<li>Maintain our community outreach initiatives</li>
+<li>Spread the teachings of Buddha and Ambedkar ideology</li>
+</ul>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Mission Bodhmay Bharat | BS4 - Bouddh Samaj Sanrakshan Sanvardhan Sangh</p>
+</footer>
+
+<script>
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>

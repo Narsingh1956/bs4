@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Mission Bodhmay Bharat</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+line-height:1.6;
+background:#f5f5f5;
+}
+
+/* NAVBAR */
+
+header{
+background:#0d47a1;
+color:white;
+}
+
+nav{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:15px;
+}
+
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+background:#0d47a1;
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+/* MAIN CONTAINER */
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
+
+/* CARD SECTIONS */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+color:#0d47a1;
+margin-bottom:10px;
+}
+
+/* VALUES LIST */
+
+.card ul{
+margin-top:10px;
+padding-left:20px;
+}
+
+.card ul li{
+margin-bottom:8px;
+}
+
+/* FOOTER */
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* MOBILE NAVIGATION */
+
+@media(max-width:768px){
+
+nav ul{
+position:absolute;
+top:60px;
+left:0;
+width:100%;
+background:#0d47a1;
+flex-direction:column;
+display:none;
+}
+
+nav ul li{
+margin:15px 0;
+text-align:center;
+}
+
+nav ul.show{
+display:flex;
+}
+
+.menu-toggle{
+display:block;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">Bodhmay Bharat</div>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<ul id="menu">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="#">Programs</a></li>
+<li><a href="#">Volunteer</a></li>
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<h1>About Our Organization</h1>
+<p>Working towards a Bodhmay Bharat based on equality, compassion and wisdom.</p>
+
+</section>
+
+
+<div class="container">
+
+<div class="cards">
+
+<div class="card">
+
+<h2>Who We Are</h2>
+
+<p>
+BS4 stands for <strong>Bouddh Samaj Sanrakshan Sanvardhan Sangh</strong>. 
+Our organization works for the <strong>Bodhmay Bharat Mission</strong>, aiming to build a society guided by knowledge, compassion, and equality.
+</p>
+
+<p>
+We follow the ideology of <strong>Baba Saheb Dr. B. R. Ambedkar</strong> and respect the teachings of the great saints born in India who preached humanity, brotherhood, and liberty.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>Our Mission</h2>
+
+<p>
+Our mission is to create a socially aware and enlightened society inspired by the teachings of Lord Buddha.
+</p>
+
+<p>
+Through education, awareness programs, and community initiatives, we aim to promote peace, equality, and dignity for all people.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>Buddhist Training Center</h2>
+
+<p>
+Our organization also runs a Buddhist training center where around <strong>15 monks</strong> currently live and practice the teachings of Buddha.
+</p>
+
+<p>
+They follow the path of wisdom, morality, and meditation while spreading the teachings of Buddha in society.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>Our Core Values</h2>
+
+<ul>
+<li>Humanity and Compassion</li>
+<li>Brotherhood and Social Harmony</li>
+<li>Equality and Justice</li>
+<li>Liberty and Dignity</li>
+<li>Education and Awareness</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<footer>
+
+<p>© 2026 Mission Bodhmay Bharat | BS4 - Bouddh Samaj Sanrakshan Sanvardhan Sangh</p>
+
+</footer>
+
+
+<script>
+
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("show");
+}
+
+</script>
+
+</body>
+</html>

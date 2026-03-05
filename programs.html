@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Programs | Mission Bodhmay Bharat</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f4f4f4;
+line-height:1.6;
+}
+
+/* NAVBAR */
+
+header{
+background:#0d47a1;
+color:white;
+}
+
+nav{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+}
+
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+background:#0d47a1;
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+/* PROGRAMS SECTION */
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:50px 20px;
+}
+
+.program-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.program-card{
+background:white;
+padding:25px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.program-card h3{
+color:#0d47a1;
+margin-bottom:10px;
+}
+
+/* FOOTER */
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+nav ul{
+position:absolute;
+top:60px;
+left:0;
+width:100%;
+background:#0d47a1;
+flex-direction:column;
+display:none;
+}
+
+nav ul li{
+margin:15px 0;
+text-align:center;
+}
+
+nav ul.show{
+display:flex;
+}
+
+.menu-toggle{
+display:block;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">Bodhmay Bharat</div>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<ul id="menu">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="programs.html">Programs</a></li>
+<li><a href="#">Volunteer</a></li>
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<h1>Our Programs</h1>
+<p>Working towards social transformation through education, awareness, and Buddhist teachings.</p>
+
+</section>
+
+
+<section class="container">
+
+<div class="program-grid">
+
+<div class="program-card">
+
+<h3>Buddhist Training Program</h3>
+
+<p>
+Our Buddhist training center provides spiritual education where monks live, study, and practice the teachings of Buddha. Currently around 15 monks are dedicated to spreading wisdom, morality, and compassion.
+</p>
+
+</div>
+
+
+<div class="program-card">
+
+<h3>Community Awareness Programs</h3>
+
+<p>
+We organize awareness campaigns to promote social equality, education, and the values of humanity, brotherhood, and liberty inspired by the teachings of Buddha and Dr. B. R. Ambedkar.
+</p>
+
+</div>
+
+
+<div class="program-card">
+
+<h3>Education Support</h3>
+
+<p>
+Our organization supports educational initiatives for underprivileged communities by providing learning opportunities, guidance, and awareness about the importance of education.
+</p>
+
+</div>
+
+
+<div class="program-card">
+
+<h3>Buddhist Teachings & Dhamma Sessions</h3>
+
+<p>
+Regular Dhamma sessions, discussions, and meditation programs are conducted to help people understand the teachings of Buddha and follow a peaceful and mindful path in life.
+</p>
+
+</div>
+
+
+<div class="program-card">
+
+<h3>Youth Empowerment</h3>
+
+<p>
+We encourage young people to become responsible citizens by spreading knowledge about social justice, equality, and the importance of community service.
+</p>
+
+</div>
+
+
+<div class="program-card">
+
+<h3>Social Welfare Activities</h3>
+
+<p>
+We organize charity activities, community services, and outreach programs to support people in need and promote compassion in society.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Mission Bodhmay Bharat | BS4 - Bouddh Samaj Sanrakshan Sanvardhan Sangh</p>
+
+</footer>
+
+
+<script>
+
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("show");
+}
+
+</script>
+
+</body>
+</html>
